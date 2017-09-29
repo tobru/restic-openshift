@@ -5,7 +5,7 @@ ENV RESTIC_VERSION=v0.7.3
 
 # Build and install restic from source
 RUN echo http://nl.alpinelinux.org/alpine/v3.4/community >> /etc/apk/repositories && \
-    apk add --no-cache git fuse && \
+    apk add --no-cache git fuse curl && \
     git clone -b "$RESTIC_VERSION" https://github.com/restic/restic && \
     cd restic && \
     go run build.go && \
