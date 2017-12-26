@@ -1,7 +1,7 @@
 FROM golang:1.8-alpine
 MAINTAINER tobias@tobru.ch
 
-ENV RESTIC_VERSION=v0.7.3
+ENV RESTIC_VERSION=v0.8.0
 
 # Build and install restic from source
 RUN echo http://nl.alpinelinux.org/alpine/v3.4/community >> /etc/apk/repositories && \
